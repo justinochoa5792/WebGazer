@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-image: linear-gradient(to right, #090979, #00d4ff);
+  font-family: "Arial";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+img {
+  width: 50vw;
+  height: 90vh;
+  transition: transform 200ms;
+  object-fit: cover;
+}
+
+img.left {
+  transform: translateX(-100vw);
+}
+
+img.right {
+  transform: translateX(100vw);
+}
+
+img.next {
+  display: none;
+}
